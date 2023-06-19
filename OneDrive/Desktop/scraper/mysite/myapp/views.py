@@ -30,3 +30,5 @@ def scrape(request):
 def clear(request):
     Link.objects.all().delete()
     return render(request,'myapp/result.html')
+
+#THIS IS A TEST
