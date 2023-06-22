@@ -1,0 +1,42 @@
+{% if i %}
+<div class="mb-3" style="border-style: groove;border-radius: 10px;">
+<div class="card-header">
+	<p class="m-0" style="font-size: 20px;">There are/is {{word}} word(s) in your text</p>
+
+
+</div>
+</div>
+{% endif %}
+
+<div class="col-12 pb-3" style="background-color: DeepSkyBlue; border: 2px; border-style: groove; border-radius: 20px;">
+<form action="counter" method="POST"> 
+	{% csrf_token %}
+
+	<div class="textarea">
+		<label for="text1">Write your text in the box below</label>
+		<br>
+		<textarea class="form-control" placeholder="Write your text here" 
+				  
+	
+				name="texttocount" id="text1" rows="8" style="background-color: #f0f5f5;">{{text}}</textarea>
+
+				<br>
+				<br>
+
+	<label for="text1">Click the button below</label>
+
+
+	</div>
+
+	
+	<!-- ads section start-->
+	<div class="text-center">
+	
+	</div>
+	
+	<!-- ads section end -->
+	<div class="form-group text-center">
+	<button type="submit" class="btn btn-primary w-25" >Click Counter</button>
+	</div>
+</form>
+</div>
