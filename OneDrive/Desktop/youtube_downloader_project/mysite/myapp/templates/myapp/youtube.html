@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <style>
+    body {
+      font-family: Comic Sans MS, sans-serif;
+    }
+    </style>
+</head>
+
+<body style="background-color:powderblue;">
+    
+<h1>YouTube video downloader</h1>
+
+
+<form action="" method="post">
+{% csrf_token %}
+
+<label for="link">Enter the YouTube URL here:</label>
+<input type="text" id="link" name="link"><br><br>
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
